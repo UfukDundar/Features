@@ -16,5 +16,13 @@ namespace Features
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            car car1 = new car();
+            car1.MotorPower = 2000;
+            car1.Colour = Colours.Red;
+            MessageBox.Show(("Vehicle Power: "+ car1.MotorPower).ToString() +  "Color: " + car1.Colour );
+        }
     }
 }
